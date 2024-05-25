@@ -1,0 +1,53 @@
+.container
+{
+    display:flex;
+    background-color:antiquewhite;
+    border: solid black 1px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.screen
+{
+    width: 600px;
+    height: 200px;
+    background-color: grey;
+    opacity: 0.3;
+}
+
+
+
+.btnbox
+{
+    border:solid black 1px;
+    width: 600px;
+    height: 600px;
+}
+
+.btnrow
+{
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn
+{
+    display: flex;
+    flex-grow: 1;
+    box-sizing: border-box;
+    height:120px;
+    width: 150px;
+    border: solid black 1px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: rgb(118, 213, 223);
+    color: darkgreen;
+}
+
