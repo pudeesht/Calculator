@@ -11,10 +11,16 @@
 
 .screen
 {
+    box-sizing: border-box;
     width: 600px;
     height: 200px;
+    display: flex;
     background-color: grey;
-    opacity: 0.3;
+    opacity: 0.6;
+    font-size: 100px;
+    justify-content: end;
+    padding-top: 80px;
+
 }
 
 
@@ -34,6 +40,8 @@
     justify-content: center;
 }
 
+
+
 .btn
 {
     display: flex;
@@ -51,3 +59,20 @@
     color: darkgreen;
 }
 
+.equalbtn, .clearbtn
+{
+    
+    display: flex;
+    flex-grow: 1;
+    box-sizing: border-box;
+    height:120px;
+    width: 150px;
+    border: solid black 1px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: rgb(198, 98, 71);
+    color: black;
+}
