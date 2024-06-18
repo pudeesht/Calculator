@@ -1,22 +1,25 @@
 .container
 {
     display:flex;
-    background-color:antiquewhite;
-    border: solid black 1px;
+    /* background-color:orange; */
+    /* border: solid black 1px; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 100px;
 }
 
 
 .screen
 {
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    width: 600px;
+    width: 500px;
     height: 200px;
     display: flex;
     background-color: grey;
     opacity: 0.6;
+    color: whitesmoke;
     font-size: 100px;
     justify-content: end;
     padding-top: 80px;
@@ -27,9 +30,16 @@
 
 .btnbox
 {
-    border:solid black 1px;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    /* height: 750px; */
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    background-color: #E3CCB2;
+    padding-bottom: 10px;
+
 }
 
 .btnrow
@@ -37,42 +47,81 @@
     display: flex;
     height: 120px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    /* border: solid black 1px; */
 }
 
 
 
 .btn
 {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     box-sizing: border-box;
     height:120px;
-    width: 150px;
+    width: 120px;
+    /* width: 150px;  */
     border: solid black 1px;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-weight: bold;
     font-size: 40px;
-    background-color: rgb(118, 213, 223);
-    color: darkgreen;
+    background-color: #E26274;
+    color: #FAEF7C;
+    border-radius: 50%;
+    transition: background-color 0.1s ease;
 }
+
+.btn:active
+{
+    background-color:#551c24 ;
+}
+
 
 .equalbtn, .clearbtn
 {
     
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     box-sizing: border-box;
     height:120px;
-    width: 150px;
+    width: 120px;
     border: solid black 1px;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-weight: bold;
     font-size: 40px;
-    background-color: rgb(198, 98, 71);
-    color: black;
+    color: #E26274;
+    background-color: #FAEF7C;
+    border-radius: 50%;
+    transition: background-color 0.1s ease;
+
+}
+
+
+.opr
+{
+    color: #E26274;
+    background-color: #FAEF7C;
+    width: 105px;
+    height: 105px;
+    transition: background-color 0.1s ease;
+
+}
+
+.opr:active
+{
+    background-color: #524e1e;
+}
+.clearbtn:active
+{
+    background-color: #524e1e;
+}
+.equalbtn:active
+{
+    background-color: #524e1e;
 }
